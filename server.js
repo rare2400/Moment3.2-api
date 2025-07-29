@@ -34,7 +34,7 @@ const experienceSchema = new mongoose.Schema({
     },
     location: {
         type: String,
-        required: false
+        required: [true, "Du måste ange ett startdatum"]
     },
     startDate: {
         type: Date,
